@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Gem } from './gem';
+import { GEMS } from './mocks';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+	products: Gem[];
+	ngOnInit(){
+		this.products = GEMS;
+		}
 }
