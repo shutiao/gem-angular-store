@@ -1,8 +1,8 @@
 import { Gem } from './gem'
 
-export const GEMS = [{
+export const GEMS:Gem[] = [{
     name: 'Circle Heart',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Inspired by Swarovski’s bestselling Circle Pendant, this simple yet romantic design is perfect for any outfit – and it makes a great gift too! The outer heart shows a shiny rose gold-plated metal surface, while the inner heart sparkles with clear crystals set in pavé. The pendant dangles on a smooth snake chain",
     shine: 8,
     price: 990.00,
     rarity: 7,
