@@ -69,7 +69,7 @@ img{
 
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus{
-  color: #ac005f;
+  /*color: #ac005f;*/
 }
 
 .nav-pills > li.active > a,

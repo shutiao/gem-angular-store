@@ -1,6 +1,8 @@
+<!--
 <p>
   product-tabs works!
 </p>
+-->
 <section>
 	<!-- Tab Navigation -->
 	<ul class = "nav nav-pills">
@@ -10,5 +12,5 @@
 	</ul>
 	{{activeTabIndex}}
 	<!-- Description Tab's Content -->
-	<app-descriptions [product] = 'product' [hidden] = 'activeTabIndex != 0'></app-descriptions>
+	<app-descriptions [product] = 'product' [hidden] = 'iTab != 0'></app-descriptions>
 </section>
