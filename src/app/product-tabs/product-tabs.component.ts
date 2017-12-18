@@ -12,16 +12,21 @@ export class ProductTabsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  	}
 
   activeTabIndex = 0;	 
   tabs = ['Description', 'Specs', 'Reviews'];
-  isSet(tab){
-  	if (tabs[activeTabIndex] == tab){
-		return True;
+  setTab(index, event){
+  	this.activeTabIndex = index;
+  	event.preventDefault();
+	}
+	
+   isSet(index){
+  	if (index == this.activeTabIndex){
+		return true;
 	} 
 	else {
-		return False;
+		return false;
 	}
   }
 }

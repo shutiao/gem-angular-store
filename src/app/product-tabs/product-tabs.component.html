@@ -4,11 +4,11 @@
 <section>
 	<!-- Tab Navigation -->
 	<ul class = "nav nav-pills">
-		<li *ngFor = 'let tab of tabs'>
-			<a href=''>{{tab}}</a>
+		<li *ngFor = "let tab of tabs; let i = index" [class.active]="isSet(i)">
+			<a href='' (click)="setTab(i,$event)">{{tab}}</a>
 		</li>
 	</ul>
-
+	{{activeTabIndex}}
 	<!-- Description Tab's Content -->
-	<app-descriptions [product] = 'product'></app-descriptions>
+	<app-descriptions [product] = 'product' [hidden] = 'activeTabIndex != 0'></app-descriptions>
 </section>
