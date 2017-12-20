@@ -12,10 +12,10 @@ export class ProductTabsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }  
+  iTab = 0;
+  tabs = ['Description', 'Specs', 'Reviews'];
   
-  this.iTab = 0;
-  this.tabs = ['Description', 'Specs', 'Reviews'];
-  }
   
 
   setTab(index, event){
