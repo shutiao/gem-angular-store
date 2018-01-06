@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Gem } from './gem';
+
 import { GemDataService } from './gem-data.service';
+
 /* Use data service instead
 import { GEMS } from './mocks';
 */
@@ -11,12 +13,13 @@ import { GEMS } from './mocks';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	/*
 	products: Gem[];
-	*/
+	constructor(private gemDataService: GemDataService) { }  
 	ngOnInit(){
+		/*
 		let gemDataService = new GemDataService();
-		this.products = gemDataService.getGems();
+		*/
+		this.products = this.gemDataService.getGems();
 		/* this.products = GEMS;*/
 		}
 	upQuantity(product){

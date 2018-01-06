@@ -9,7 +9,8 @@ import { SpecsComponent } from './product-tabs/specs/specs.component';
 import { ReviewsComponent } from './product-tabs/reviews/reviews.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
-
+import { GemDataService } from './gem-data.service';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,7 @@ import { GalleryComponent } from './gallery/gallery.component';
   	BrowserModule,
 	FormsModule
   ],
-  providers: [],
+  providers: [GemDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
