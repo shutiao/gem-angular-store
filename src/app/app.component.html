@@ -6,10 +6,8 @@
 <div class = "list-group">
 	<div class = "list-group-item" *ngFor = "let product of products">
 		<h3>Gem #{{$index}}: {{product.name | uppercase}} <em class = "pull-right">{{product.price | currency:'CNY':true}}</em>
-		</h3>
-		<div class = "img-wrap">
-			<img [src] = 'product.images[0]' class = "img-thumbnail center-block"/>
-		</div>
+		</h3>	
+		<product-gallery [product] = "product"></product-gallery>
 		<app-product-tabs [product] = "product"></app-product-tabs>
 	</div>
 </div>

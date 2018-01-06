@@ -1,0 +1,9 @@
+<div class = "img-wrap"> 
+     	<img [src] = 'product.images[imageIndex]' class = "img-thumbnail center-block"/> 
+</div> 
+<ul class = 'img-thumbnails clearfix'> 
+	<li class = 'small-image pull-left thumbnail' *ngFor = 'let image of product.images; let i = index' (click) = 'currentImageChange(i, $event)'> 
+		<img [src] = 'image' />	
+	</li> 	
+</ul>
+
