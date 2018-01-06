@@ -19,7 +19,8 @@ export class AppComponent {
 		/*
 		let gemDataService = new GemDataService();
 		*/
-		this.products = this.gemDataService.getGems();
+		this.gemDataService.getGems()
+		.subscribe(mocks => this.products = mocks);		
 		/* this.products = GEMS;*/
 		}
 	upQuantity(product){
