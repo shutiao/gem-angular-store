@@ -31,4 +31,17 @@ export class AppComponent {
 			product.quantity--;
 			}
 		}
+	totalPurchases(){
+		let sum = 0;
+		if (Array.isArray(this.products)){
+			for (let product of this.products){
+				if(product.quantity){
+					sum += product.quantity * product.price;
+				}
+			}
+		}
+		return sum;
+	}
+
+
 }
