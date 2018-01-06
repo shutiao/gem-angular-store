@@ -10,4 +10,5 @@ export class Gem{
 	faces:		number;
 	images:		string[];
 	reviews:	Review[];
+	quantity:	number;
 	}	

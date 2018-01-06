@@ -4,8 +4,16 @@
 </header>
 
 <div class = "list-group">
-	<div class = "list-group-item" *ngFor = "let product of products">
-		<h3>Gem #{{$index}}: {{product.name | uppercase}} <em class = "pull-right">{{product.price | currency:'CNY':true}}</em>
+	<div class = "list-group-item" *ngFor = "let product of products; let i = index">
+		<h3>Gem #{{i+1}}: {{product.name | uppercase}} 
+			<em class = "pull-right">{{product.price | currency:'CNY':true}}</em>
+			<div>
+				<button class = 'decreae' (click) = 'downQuantity(product)'>-</button>
+				<input class = 'number' type = 'text' [value] = 'product.quantity'
+				(input) = 'product.quantity = $event.target.value'/>	
+				<input type = 'text' [(ngModel)] = 'product.quantity'>
+				<button class = 'increase' (click) = 'upQuantity(product)'>+</button>
+			</div>
 		</h3>	
 		<product-gallery [product] = "product"></product-gallery>
 		<app-product-tabs [product] = "product"></app-product-tabs>

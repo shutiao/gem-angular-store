@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductTabsComponent } from './product-tabs/product-tabs.component';
@@ -20,7 +20,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     GalleryComponent
   ],
   imports: [
-    BrowserModule
+  	BrowserModule,
+	FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

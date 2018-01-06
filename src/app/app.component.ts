@@ -12,4 +12,12 @@ export class AppComponent {
 	ngOnInit(){
 		this.products = GEMS;
 		}
+	upQuantity(product){
+		product.quantity++;
+		}
+	downQuantity(product){
+		if (product.quantity){
+			product.quantity--;
+			}
+		}
 }

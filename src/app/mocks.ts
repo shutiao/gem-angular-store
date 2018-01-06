@@ -3,6 +3,7 @@ import { Gem } from './gem'
 export const GEMS:Gem[] = [{
     name: 'Circle Heart',
     description: "Inspired by Swarovski’s bestselling Circle Pendant, this simple yet romantic design is perfect for any outfit – and it makes a great gift too! The outer heart shows a shiny rose gold-plated metal surface, while the inner heart sparkles with clear crystals set in pavé. The pendant dangles on a smooth snake chain",
+    quantity: 0,
     shine: 8,
     price: 990.00,
     rarity: 7,
@@ -24,10 +25,11 @@ export const GEMS:Gem[] = [{
       body: "This gem sucks.",
       author: "tim@hater.com",
       createdOn: 1397490980837
-    }]
+      }]
   }, {
     name: 'Bloodstone',
     description: "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
+    quantity: 0;
     shine: 9,
     price: 22.90,
     rarity: 6,
@@ -35,8 +37,8 @@ export const GEMS:Gem[] = [{
     faces: 12,
     images: [
     "/assets/images/gem-01.gif",
-      "img/gem-03.gif",
-      "img/gem-04.gif",
+    "/assets/images/gem-03.gif",
+    "/assets/images/gem-04.gif",
     ],
     reviews: [{
       stars: 3,
@@ -52,6 +54,7 @@ export const GEMS:Gem[] = [{
   }, {
     name: 'Zircon',
     description: "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+    quantity: 0,
     shine: 70,
     price: 1100,
     rarity: 2,
@@ -59,8 +62,8 @@ export const GEMS:Gem[] = [{
     faces: 6,
     images: [
     "/assets/images/gem-06.gif",
-      "img/gem-07.gif",
-      "img/gem-10.gif"
+    "/assets/images/gem-07.gif",
+    "/assets/images/gem-10.gif"
     ],
     reviews: [{
       stars: 1,
