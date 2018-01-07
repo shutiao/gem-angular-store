@@ -18,6 +18,7 @@ export class ReviewsComponent implements OnInit {
 
   addReview(product){
     product.reviews.push(product.reviewForm);
+    // Two ways binding. HTML is cleared and reviewForm is cleared as well.
     product.reviewForm = {};
   }
 }
