@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductTabsComponent } from '../product-tabs.component';
+import { Review } from '../../review';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-reviews',
@@ -9,10 +11,13 @@ import { ProductTabsComponent } from '../product-tabs.component';
 export class ReviewsComponent implements OnInit {
 
   @Input() product;
-
   constructor() { }
 
   ngOnInit() {
   }
 
+  addReview(product){
+    product.reviews.push(product.reviewForm);
+    product.reviewForm = {};
+  }
 }

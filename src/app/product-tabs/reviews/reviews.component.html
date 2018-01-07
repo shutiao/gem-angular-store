@@ -10,4 +10,36 @@
 			</blockquote>
 		</li>
 	</ul>
+
+	<!-- Review Form-->
+	<form name = 'reviewForm' (submit) = 'addReview(product)'>
+		<!-- Live Preview -->
+		<blockquote [hidden] = '!product.reviewForm.stars'>
+			<strong>{{product.reviewForm.stars}} Stars</strong>
+			{{product.reviewForm.body}}
+			<cite class = 'clearfix'>-{{product.reviewForm.author}} on {{product.reviewForm.createdOn}}</cite>
+		</blockquote>
+
+		<!-- Review Form -->
+		<h4>Submit a Review</h4>
+		<fieldset class = 'form-group'>
+			<select class = 'form-control' [(ngModel)] = 'product.reviewForm.stars' name = 'stars'>
+				<option value = ''>Rate the Product</option>
+				<option value = "1">1 star</option>
+				<option value = "5">5 stars</option>
+			</select>
+		</fieldset>
+		<fieldset class = 'form-group'>
+			<textarea class = 'form-control' placeholder = 'Write a short review of the product...' name = 'body'
+			[(ngModel)] = 'product.reviewForm.body'></textarea>
+		</fieldset>
+		<fieldset class = 'form-group'>
+			<input type = 'email' class = 'form-control' placeholder = 'jimmy@qq.com' name = 'author'
+			[(ngModel)] = 'product.reviewForm.author'/>
+		</fieldset>
+		<fieldset class = 'form-group'>
+			<input type = 'submit' class = 'btn btn-primary pull-right' value = 'Submit Review' />
+		</fieldset>
+	</form>
+
 </div>
