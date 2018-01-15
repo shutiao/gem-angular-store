@@ -7,14 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
   @Input() product;
- 
+  imageIndex = 0;
+  currentImageChange = function(imageNumber){
+    this.imageIndex = imageNumber || 0;
+  };
   constructor() { }
 
   ngOnInit() {
   	this.imageIndex = 0;
-	this.currentImageChange = function(imageNumber){
-		this.imageIndex = imageNumber || 0;
-		};
   }
 
 }

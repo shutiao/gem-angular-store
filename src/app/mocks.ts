@@ -15,7 +15,12 @@ export const GEMS:Gem[] = [{
       "/assets/images/gem-05.gif",
       "/assets/images/gem-09.gif",
     ],
-    reviews: [{
+    "reviewForm":{
+      "stars": null,
+      "body": null,
+      "author": null,
+      "createdOn": null
+    },reviews: [{
       stars: 5,
       body: "I love this gem!",
       author: "joe@thomas.com",
@@ -29,7 +34,7 @@ export const GEMS:Gem[] = [{
   }, {
     name: 'Bloodstone',
     description: "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
-    quantity: 0;
+    quantity: 0,
     shine: 9,
     price: 22.90,
     rarity: 6,
@@ -40,7 +45,12 @@ export const GEMS:Gem[] = [{
     "/assets/images/gem-03.gif",
     "/assets/images/gem-04.gif",
     ],
-    reviews: [{
+    "reviewForm":{
+      "stars": null,
+      "body": null,
+      "author": null,
+      "createdOn": null
+    },reviews: [{
       stars: 3,
       body: "I think this gem was just OK, could honestly use more shine, IMO.",
       author: "JimmyDean@sausage.com",
@@ -65,7 +75,12 @@ export const GEMS:Gem[] = [{
     "/assets/images/gem-07.gif",
     "/assets/images/gem-10.gif"
     ],
-    reviews: [{
+    "reviewForm":{
+      "stars": null,
+      "body": null,
+      "author": null,
+      "createdOn": null
+    },reviews: [{
       stars: 1,
       body: "This gem is WAY too expensive for its rarity value.",
       author: "turtleguyy@zdn.me",

@@ -1,0 +1,32 @@
+{
+"data":
+ [{
+    "name": "Circle Heart",
+    "description": "Inspired by Swarovski’s bestselling Circle Pendant, this simple yet romantic design is perfect for any outfit – and it makes a great gift too! The outer heart shows a shiny rose gold-plated metal surface, while the inner heart sparkles with clear crystals set in pavé. The pendant dangles on a smooth snake chain",
+    "quantity": 0,
+    "shine": 8,
+    "price": 990.00,
+    "rarity": 7,
+    "color": "#CCC",
+    "faces": 14,
+    "images": [
+      "/assets/images/Swarovski-Circle-Heart-Pendant-White-Rose-gold-plating-5127999.jpg",
+      "/assets/images/gem-02.gif",
+      "/assets/images/gem-05.gif",
+      "/assets/images/gem-09.gif"
+    ],
+    "reviewForm":{
+      "stars": null,
+      "body": null,
+      "author": null,
+      "createdOn": null
+    },
+    "reviews": [{
+      "stars": 5,
+      "body": "I love this gem!",
+      "author": "joe@thomas.com",
+      "createdOn": 1397490980837
+    }]
+  }]
+ }
+

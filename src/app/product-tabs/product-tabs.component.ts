@@ -14,7 +14,7 @@ export class ProductTabsComponent implements OnInit {
   ngOnInit() {
   }
 
-  iTab = 0;
+  iTab = 2;
   tabs = ['Description', 'Specs', 'Reviews'];
 
   setTab(index, event){
